@@ -1,0 +1,5 @@
+/master_download_dump/delivery_volumes/*
+/master_download_dump/indices/*
+/master_download_dump/nse_equity/*
+/master_download_dump/nse_f&o/*
+/master_download_dump/participant_wise_open_interest/*
