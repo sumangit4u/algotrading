@@ -3,14 +3,14 @@ import pandas as pd
 pd.options.display.width = 0
 pd.set_option('display.max_columns', 500)
 
-def golden_cross(symbol_df,daily_ind_df):
-    symbol_df = calc_sma(symbol_df, 5)
-    symbol_df = calc_ema(symbol_df, 5)
-    symbol_df = calc_rsi(symbol_df)
-    symbol_df = calc_bband(symbol_df,period=5)
-    symbol_df = calc_ndays_vwap(symbol_df,daily_ind_df,5)
-    symbol_df = calc_sma(symbol_df, 9,'high')
-    print(symbol_df.head(20))
+# def golden_cross(symbol_df,daily_ind_df):
+#     symbol_df = calc_sma(symbol_df, 5)
+#     symbol_df = calc_ema(symbol_df, 5)
+#     symbol_df = calc_rsi(symbol_df)
+#     symbol_df = calc_bband(symbol_df,period=5)
+#     symbol_df = calc_ndays_vwap(symbol_df,daily_ind_df,5)
+#     symbol_df = calc_sma(symbol_df, 9,'high')
+#     print(symbol_df.head(20))
 
 def check_strategies(symbol_df,symbol_df_w,symbol_df_m,daily_ind_df):
     symbol_df = calc_ndays_vwap(symbol_df, daily_ind_df, 5)
