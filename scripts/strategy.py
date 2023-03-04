@@ -115,10 +115,11 @@ def check_strategies(symbol_df,symbol_df_w,symbol_df_m,daily_ind_df):
     symbol_df['WeeklyEMA_5C_Above_20C'] = (merged_with_week['ema_5_close_y'] > merged_with_week['ema_20_close_y'])
     symbol_df['DailyEMA_5C_Above_20C'] = (symbol_df['ema_5_close'] > symbol_df['ema_20_close'])
 
-    print(symbol_df.tail(20))
+    print(symbol_df.tail(200))
     #symbol_df.to_csv(f"..\\strategies_by_symbol\\{symbol_df['symbol'][0]}.csv")
     #symbol_df.to_json(f"..\\strategies_by_symbol\\{symbol_df['symbol'][0]}.json")
     symbol_df.to_excel(f"..\\strategies_by_symbol\\{symbol_df['symbol'][0]}.xlsx")
+    # Testing branches
 
 
 

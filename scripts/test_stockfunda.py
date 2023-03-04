@@ -2,10 +2,10 @@ import pandas as pd
 import datetime
 import psycopg2
 import pandas.io.sql as psql
-from scripts.nse_files import download_nse_files
-from pymongo import MongoClient
-from scripts.populate_nse_daily_data import populate_nse_files_data
-from scripts.strategy import golden_cross,check_strategies
+#from scripts.nse_files import download_nse_files
+#from pymongo import MongoClient
+#from scripts.populate_nse_daily_data import populate_nse_files_data
+from scripts.strategy import check_strategies
 
 if __name__=='__main__':
 
